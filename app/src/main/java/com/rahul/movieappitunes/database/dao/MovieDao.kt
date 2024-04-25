@@ -59,4 +59,5 @@ abstract class MovieDao {
      */
     @Query("SELECT * FROM movies WHERE favorite = 1")
     abstract fun getAllFavoriteMovies(): LiveData<List<MovieEntity>>
+
 }
